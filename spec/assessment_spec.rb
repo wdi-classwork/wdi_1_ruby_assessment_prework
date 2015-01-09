@@ -24,16 +24,16 @@ RSpec.describe 'add_element_to_array' do
   end 
 end
 
-RSpec.describe 'is_day_a_weekday' do
+RSpec.describe 'is_day_a_weekday?' do
   it 'takes a string and returns true if it is a weekday, false if it is a weekend day' do
-    expect(is_day_a_weekday('monday')).to eq true
-    expect(is_day_a_weekday('saturday')).to eq false
+    expect(is_day_a_weekday?('monday')).to eq true
+    expect(is_day_a_weekday?('saturday')).to eq false
   end
 end
 
 RSpec.describe 'blackjack?' do
   it 'takes two arguments, either integers or strings representing playing cards, and returns true if the sum of the values is 21, false if any other number' do
-    expect(blackjack(10, 'a')).to eq true
-    expect(blackjack(5, 4)).to eq false
+    expect(blackjack?(10, 'a')).to eq true
+    expect(blackjack?(5, 4)).to eq false
   end
 end
