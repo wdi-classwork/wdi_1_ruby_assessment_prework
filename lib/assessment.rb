@@ -33,17 +33,12 @@ end
 def add_element_to_array(array, item)
 end
 
-# Question 4
-# This function should take a string that represents a day of the week
-# It should return true if it is a week day, and false if it is a weekend
-# Assume that the input strings as lowercase and spelled properly
-# For example:
-# is_day_a_weekday?('monday') #=> true
-# is_day_a_weekday?('saturday') #=> false
-def is_day_a_weekday?(day)
-end
 
-# Question 5
+
+# BONUS QUESTION (optional)
+# If you got the prior ones done, give this one a try.
+# its a little bit harder, and isn't part of the core assessment
+#
 # This function should take two arguments that are either integers 2..10,
 # or strings 'j', 'q', 'k', 'a' representing playing cards
 # The function returns true if the sum of the values of the cards if 21,

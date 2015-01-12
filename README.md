@@ -6,9 +6,10 @@
 
 The aim of this assessment is to test your knowledge of materials covered in the prework:
 
-- Objective 1
-- Objective 2
-- Objective 3
+- methods
+- string manipulation
+- if/else expressions
+- inserting an element to an array
 
 ## Instructions
 

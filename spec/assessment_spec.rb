@@ -21,16 +21,11 @@ RSpec.describe 'add_element_to_array' do
   it 'inserts an element to the end of the array and returns the array' do
     expect(add_element_to_array([1,2],3)).to eq [1,2,3]
     expect(add_element_to_array(['fizz','buzz'],'baz')).to eq ['fizz','buzz','baz']
-  end 
-end
-
-RSpec.describe 'is_day_a_weekday' do
-  it 'takes a string and returns true if it is a weekday, false if it is a weekend day' do
-    expect(is_day_a_weekday?('monday')).to eq true
-    expect(is_day_a_weekday?('saturday')).to eq false
   end
 end
 
+
+# Bonus, optional. See `lib/assessment.rb` for more details
 RSpec.describe 'blackjack?' do
   it 'takes two arguments, either integers or strings representing playing cards, and returns true if the sum of the values is 21, false if any other number' do
     expect(blackjack?(10, 'a')).to eq true
