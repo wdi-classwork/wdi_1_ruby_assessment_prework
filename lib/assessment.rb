@@ -6,6 +6,13 @@
 # string_it_x_times(4) #=> "4444"
 # string_it_x_times(2) #=> "22"
 def string_it_x_times(x)
+  count = 0
+  string = ""
+  while count < x
+    string = string + "#{x}"
+    count = count + 1
+  end
+  return string
 end
 
 # Question 2
@@ -21,6 +28,16 @@ end
 # fizz_or_buzz(15) #=> "fizzbuzz"
 # fizz_or_buzz(2) #=> 2
 def fizz_or_buzz(x)
+  if x%3 == 0
+    string = "fizz"
+  elsif x%5 == 0
+    string = "buzz"
+  elsif x%3 == 0 && x%5 == 0
+    string = "fizzbuzz"
+  else
+    string = x
+  end
+  return string
 end
 
 # Question 3
