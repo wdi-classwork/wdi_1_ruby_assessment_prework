@@ -30,11 +30,22 @@ end
 def fizz_or_buzz(x)
   if x%3 == 0
     string = "fizz"
-  elsif x%5 == 0
+      if x%5 == 0
+        string = "buzz"
+      end
+  end
+
+   if x%5 == 0
     string = "buzz"
-  elsif x%3 == 0 && x%5 == 0
-    string = "fizzbuzz"
-  else
+      if x%3 == 0
+        string = "fizzbuzz"
+      end
+  end
+
+  # if x%3 == 0 && x%5 == 0
+  #   string = "fizzbuzz"
+  # else
+  if x%3 != 0 && x%5 != 0
     string = x
   end
   return string
